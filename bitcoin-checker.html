@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bitcoin-checker.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Bitcoin Price Checker</h1>
+    <p>Current price is: <span id="price"></span><span id="currencyValue"> USD</span></p>
+    <form id="form">
+        <input type="radio" id="USD" name="currency" value="USD" checked>
+        <label for="USD">USD</label>
+        <input type="radio" id="EUR" name="currency" value="EUR">
+        <label for="EUR">EUR</label>
+        <input type="radio" id="GBP" name="currency" value="GBP">
+        <label for="GBP">GBP</label>
+        <div>
+            <button id="btn" type="button">Submit</button>
+        </div>
+    </form>
+
+    <script src="bitcoin-checker.js"></script>
+</body>
+
+</html>

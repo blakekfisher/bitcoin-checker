@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100&display=swap');
+
+body {
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 0, 0.1)),
+        url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/05/04/15/bitcoin-price-latest-news-update.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+    font-size: 5em;
+    animation: moveHeader 0.7s ease;
+}
+
+@keyframes moveHeader {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 100;
+    }
+}
+
+p,
+form {
+    font-size: 2.5em;
+}
+
+form div {
+    text-align: center;
+}
+
+#btn {
+    position: relative;
+    margin-top: 30px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: white;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 6px rgb(92, 92, 92);
+}
+
+#btn:hover {
+    top: 2px;
+    box-shadow: 0 4px rgb(92, 92, 92);
+}
+
+#btn:active {
+    top: 4px;
+    box-shadow: none;
+}
+
+#btn:focus {
+    outline: none;
+}
